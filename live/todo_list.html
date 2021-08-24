@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="./css/todo_list.css">
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script defer src="todo_list.js"></script>
+    <title>TO DO LIST</title>
+  </head>
+  <body class="bg">
+     <div class="container">
+        <h1 class="app-title" id="header">To do list</h1>
+        <div class="row" id="user">
+            <a href="login_page.html" class="btn btn-light submit-btn" id="btnLogout" >Log Out</a>
+            <input type="text" id="user-id" disabled>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                what would you like to do today
+            </div>
+            <div class="card-body">
+                <form id="addTaskForm" class="deneme">
+                    <div class="input-group row">    
+                     <input id="input" name="taskName" type="text" class="form-control col-9" placeholder="What will you buy" aria-describedby="btnAddNewTask" pattern="(?!^\d+$)^.+$">
+                          <div class="input-group-append">
+                             <button class="btn btn-primary" type="submit" id="btnAddNewTask">
+                                  <i class="fas fa-plus"></i>
+                             </button>
+                        </div>
+                        <select name="CATEGORY" class="clsoption col-2">
+                            <option class="food">Food</option>
+                            <option class="drink">Drink</option>
+                            <option class="clothes">Clothes</option>
+                            <option class="hobby">Hobby</option>
+                            <option class="business">Business</option>
+                        </select>
+                    </div> 
+                </form>
+            </div>
+        </div>
+            <div class="card-list">
+               <div class="card-header">
+                    List
+                        <button id="btnDeleteAll" href="#" class="btn">
+                             Delete All
+                        </button>
+               </div>
+                     <ul id="list" class="list-group" >
+        
+                     </ul>
+            </div>
+       </div>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

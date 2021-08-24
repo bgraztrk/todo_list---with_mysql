@@ -1,0 +1,21 @@
+.bg{
+    background: url(../image/background3.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 110%;
+}
+.form-container{
+    position:absolute;
+    top:20vh;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+a:hover {
+    text-decoration: none;
+
+}
+.href {
+    padding: 10px 50px;
+}
